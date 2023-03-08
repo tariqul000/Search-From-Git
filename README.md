@@ -1,5 +1,6 @@
 # Search-From-Git
-Test project for github search 
+Example project of SwiftUI and Combine using MVVM architecture pattern.
+
 
 ## TODO
 
