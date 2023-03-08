@@ -113,7 +113,7 @@
 		B84C6FDB29B751E4004F0D6F /* SearchFromGit */ = {
 			isa = PBXGroup;
 			children = (
-				B88E5FF129B75EB20070B42B /* Business */,
+				B88E5FF129B75EB20070B42B /* Base */,
 				B88E5FF029B75E660070B42B /* RepositoryList */,
 				B84C6FDC29B751E4004F0D6F /* SearchFromGitApp.swift */,
 				B84C6FE029B751E5004F0D6F /* Assets.xcassets */,
@@ -185,12 +185,12 @@
 			path = RepositoryList;
 			sourceTree = "<group>";
 		};
-		B88E5FF129B75EB20070B42B /* Business */ = {
+		B88E5FF129B75EB20070B42B /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				B88E5FF429B75FE50070B42B /* NetworkCalling */,
 			);
-			path = Business;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		B88E5FF429B75FE50070B42B /* NetworkCalling */ = {

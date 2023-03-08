@@ -57,7 +57,7 @@ class RepositoryListViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] repo in
                 self?.displayData = repo.items.map { RepositoryItemViewModel(repo: $0)}
-                print("Result count = \(repo.items.count)")
+                print("Result = \(repo.items.count)")
             }
             .store(in: &cancellables)
     }
