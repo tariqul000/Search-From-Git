@@ -4,7 +4,7 @@ Example project of SwiftUI and Combine using MVVM architecture pattern.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/7487290/223676562-5b78b71a-4549-489e-a9d2-ffb19a71c401.png" width="250" max-width="90%" alt="SwiftUI" />
-  <img src="https://user-images.githubusercontent.com/7487290/223676562-5b78b71a-4549-489e-a9d2-ffb19a71c401.png" width="250" max-width="90%" alt="SwiftUI" />
+  <img src="https://user-images.githubusercontent.com/7487290/223678230-18a26314-07ba-4375-9fc0-979b6e8e4c2f.png" width="250" max-width="90%" alt="SwiftUI" />
 </p>
 
 ## TODO
