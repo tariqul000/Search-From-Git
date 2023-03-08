@@ -5,7 +5,6 @@
 //  Created by Tariqul Islam on 7/3/23.
 //
 
-
 import Foundation
 
 struct Endpoint {
@@ -32,7 +31,7 @@ extension Endpoint {
     static func searchRepository(query: String) -> Self {
         return Endpoint(path: "/repositories",
                         queryItems: [
-                            URLQueryItem(name: "tariqul000",
+                            URLQueryItem(name: "q",
                                          value: "\(query)")
                         ]
         )

@@ -10,7 +10,7 @@ import Combine
 
 class RepositoryListViewModel: ObservableObject {
     @Published public var searchText = ""
-    @Published public var displayData: [RepositoryListViewModel] = []
+    @Published public var displayData: [RepositoryItemViewModel] = []
     
     private var searchCancellable: Cancellable? {
         didSet {
@@ -18,10 +18,10 @@ class RepositoryListViewModel: ObservableObject {
         }
     }
     
-    private var repositoryService: RepositoryListServiceProtocol
+    private var repositoryService: GitHubListServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     
-    init(repositoryService: RepositoryListServiceProtocol = RepositoryListService()) {
+    init(repositoryService: GitHubListServiceProtocol = RepositoryListService()) {
         self.repositoryService = repositoryService
         _ = NetworkMonitor.shared
         bindSearch()
@@ -42,11 +42,11 @@ class RepositoryListViewModel: ObservableObject {
     }
     
     public func load() {
-        self.fetchData(string: "yougov ios demo")
+        self.fetchData(string: "tariqul000")
     }
     
     private func fetchData(string: String) {
-        repositoryService.searchRepository(query: string)
+        repositoryService.searchGitRepository(query: string)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -56,8 +56,7 @@ class RepositoryListViewModel: ObservableObject {
                 case .finished: break
                 }
             } receiveValue: { [weak self] repo in
-                
-                self?.displayData = repo.items.map { RepositoryListViewModel(repo: $0)}
+                self?.displayData = repo.items.map { RepositoryItemViewModel(repo: $0)}
                 print("Result count = \(repo.items.count)")
             }
             .store(in: &cancellables)

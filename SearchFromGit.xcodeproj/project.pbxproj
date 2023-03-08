@@ -21,6 +21,8 @@
 		B88E5FFC29B765490070B42B /* RepositoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88E5FFB29B765490070B42B /* RepositoryListModel.swift */; };
 		B88E5FFF29B766050070B42B /* RepositoryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88E5FFE29B766050070B42B /* RepositoryListService.swift */; };
 		B88E600129B7663F0070B42B /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88E600029B7663F0070B42B /* RepositoryListViewModel.swift */; };
+		B8E4495B29B845900042681F /* RepositoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E4495A29B845900042681F /* RepositoryItemViewModel.swift */; };
+		B8E4496229B850CB0042681F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E4496129B850CB0042681F /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		B88E5FFB29B765490070B42B /* RepositoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListModel.swift; sourceTree = "<group>"; };
 		B88E5FFE29B766050070B42B /* RepositoryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListService.swift; sourceTree = "<group>"; };
 		B88E600029B7663F0070B42B /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
+		B8E4495A29B845900042681F /* RepositoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItemViewModel.swift; sourceTree = "<group>"; };
+		B8E4496129B850CB0042681F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B84C6FDE29B751E4004F0D6F /* RepositoryListView.swift */,
+				B8E4496129B850CB0042681F /* ListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		B88E5FEF29B75E300070B42B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B8E4495A29B845900042681F /* RepositoryItemViewModel.swift */,
 				B88E600029B7663F0070B42B /* RepositoryListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -338,10 +344,12 @@
 			files = (
 				B88E5FF629B75FFB0070B42B /* NetworkManager.swift in Sources */,
 				B88E5FFC29B765490070B42B /* RepositoryListModel.swift in Sources */,
+				B8E4495B29B845900042681F /* RepositoryItemViewModel.swift in Sources */,
 				B84C6FDF29B751E4004F0D6F /* RepositoryListView.swift in Sources */,
 				B88E5FFF29B766050070B42B /* RepositoryListService.swift in Sources */,
 				B88E5FF829B7600F0070B42B /* NetworkMonitor.swift in Sources */,
 				B88E5FF329B75FDB0070B42B /* Endpoint.swift in Sources */,
+				B8E4496229B850CB0042681F /* ListItemView.swift in Sources */,
 				B88E600129B7663F0070B42B /* RepositoryListViewModel.swift in Sources */,
 				B88E5FFA29B7601A0070B42B /* NetworkService.swift in Sources */,
 				B84C6FDD29B751E4004F0D6F /* SearchFromGitApp.swift in Sources */,
@@ -514,7 +522,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -553,7 +561,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;

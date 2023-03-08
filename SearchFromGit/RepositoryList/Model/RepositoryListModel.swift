@@ -5,28 +5,13 @@
 //  Created by Tariqul Islam on 7/3/23.
 //
 
-import Foundation
 struct RepositoryListModel: Codable {
-    let items: [Item]
+    let items: [Items]
 }
 
-// MARK: - Item
-struct Item: Codable {
-    let name, fullName: String
-    let owner: Owner
+struct Items: Codable, Identifiable {
+    var id: Int
+    let name, fullName: String?
 
-    enum CodingKeys: String, CodingKey {
-        case name
-        case fullName = "full_name"
-        case owner
-    }
 }
 
-// MARK: - Owner
-struct Owner: Codable {
-    let avatarURL: String
-
-    enum CodingKeys: String, CodingKey {
-        case avatarURL = "avatar_url"
-    }
-}

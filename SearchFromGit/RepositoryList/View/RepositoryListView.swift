@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var searchText = ""
+    //  @State private var searchText = ""
+    @ObservedObject var viewModel: RepositoryListViewModel
 
     var body: some View {
-            NavigationStack {
-                   Text("Searching for \(searchText)")
-                       .navigationTitle("Search Repositories")
-               }
-           .searchable(text: $searchText)
+            NavigationView {
+                List(viewModel.displayData) { displayData in
+                    ListItemView(displayData: displayData)
+                }
+                .navigationTitle("Search Repositories")
+                .onAppear(){
+                    self.viewModel.load()
+                }
+            }
+            .searchable(text: $viewModel.searchText)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: RepositoryListViewModel())
     }
 }
